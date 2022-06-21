@@ -1,8 +1,11 @@
 const apiURL = "https://jsonplaceholder.typicode.com/"
 
 function remove(el) {
-  el.remove();
-  confirm('Are you sure you want to delete user?');
+  let confirmAction = confirm('Are you sure you want to delete user?');
+  if (confirmAction){
+    alert('User has been removed');
+    el.remove();
+  } else {alert('User has not been removed.')}
 }
 
 function resultUpdate () {
