@@ -74,12 +74,6 @@ fetch(apiURL + "users").then((data)=>{
     });
 
     document.getElementById("userPool").innerHTML=users;
-    console.log(completedata.length)
-    console.log(completedata)
-
-
-    // console.log(completedata.splice(2,1))
-    console.log(completedata.length)
     let userPool = document.getElementById("userPool");
     let numChildren = userPool.childElementCount
     let numUsers =
